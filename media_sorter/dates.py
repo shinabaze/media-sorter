@@ -5,7 +5,7 @@ import os
 import re
 from datetime import datetime
 
-# 2026-03-14, 2026_03_14, 20260314: as in IMG_20260314_101500.jpg or "Screenshot 2026-03-14 at 10.15.00.png"
+# YYYY-MM-DD, YYYY_MM_DD, YYYY.MM.DD or YYYYMMDD anywhere in a name, as in IMG_20260314_101500.jpg
 NAME_DATE = re.compile(r"(?<!\d)((?:19|20)\d\d)[-_.]?(0[1-9]|1[0-2])[-_.]?(0[1-9]|[12]\d|3[01])(?!\d)")
 
 
